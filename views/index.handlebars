@@ -1,0 +1,45 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/dashboardstyle.css">
+    <title>Dashboard</title>
+  </head>
+
+  <body>                                                   <!-- Rendered with object containing datesToRender array -->
+
+<nav>
+
+
+  {{#if user}}
+
+
+   <!--<a href="/users/createSignIn"><button type="submit" style="margin-right:2em">Create Sign In Sheet</button></a>-->
+
+      <a href="/users/createSignIn"><button type="submit" style="margin-right:2em">Create PDF</button></a>
+
+  <a href="/users/logout">  <button type="submit">Log Out</button></a>
+
+  {{/if}}
+
+</nav>
+
+<div id="title">
+    <h2>Dashboard
+</div>
+
+
+
+<div id="items">
+
+      {{#each dates}}
+      <br>
+
+      <a href="/users/accessPDF?date={{this}}" style="text-decoration:none; color:white"><button style="width:25%">  {{this}}</button> </a>
+      {{/each}}
+
+
+</div>
+
+  </body>
+
+</html>

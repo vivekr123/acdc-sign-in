@@ -1,0 +1,63 @@
+{{#if user}}
+
+<html>
+
+<head>
+  <!--
+  <title>Sign-In Page</title>-->
+  <link type="text/css" rel="stylesheet" href="/css/sheet.css"/>
+  <link rel="icon" href="Favicon.png"/>
+  <script src="/js/main.js"></script>
+</head>
+
+<form method="post" action="/users/createSignIn" name="Form">
+
+  <div id="row-fluid">
+    <!--  <input style="float:left" type="button" value="Add Row" onclick="addRow()"> -->
+      <input style="float:center" type="submit" value="Submit" onclick="submit()">
+    <!--  <input style="float:right" type="button" value="Remove Row" onclick="delRow()">   -->
+  </div>
+
+<body onload="onload()">
+                                  <!--FIX THIS for it to work -->
+
+  <table id="t">
+    <thead>
+      <th style="width: 30%"><h1>Name</h1></th>
+      <th style="width: 10%"><h2>Grade</h2></th>
+      <th><h3>Email</h3></th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div data-tip="Name">
+            <input type="text" name="Name" value="John Doe" id="Name" required>
+          </div>
+        </td>
+        <td>
+          <div data-tip="Grade">
+            <input style="width: 50%" type="text" name="Grade" value="5th" id="Grade" required>
+          </div>
+        </td>
+        <td>
+          <div data-tip="Email">
+            <input type="text" name="Email" value="JohnDoe@defaultemail.com" id="Email" required>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<div style="text-align:center;">
+  <br>
+  <br>
+  <h1>Notes</h2>
+<textarea type="text" id="notes" name="notes"></textarea>
+</div>
+</body>
+</form>
+
+</html>
+
+{{/if}}-->
